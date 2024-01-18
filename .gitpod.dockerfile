@@ -10,6 +10,7 @@ USER root
 
 # Dependency
 RUN apt-get update && apt-get upgrade -y
-RUN git clone  https://github.com/akhilnarang/scripts.git && cd scripts && bash setup/android_build_env.sh && cd ..
+RUn apt install python3 python3-pip -y
+RUN git clone  https://github.com/akhilnarang/scripts.git && cd scripts && bash setup/android_build_env.sh && cd .. && rm -rf scripts
 
 # End
