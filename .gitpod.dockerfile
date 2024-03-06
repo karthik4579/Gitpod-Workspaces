@@ -9,8 +9,7 @@ FROM fedora:latest
 USER root
 
 # Dependency
-RUN apt-get update && apt-get upgrade -y
-RUN apt install python3 python3-pip -y
-RUN git clone  https://github.com/akhilnarang/scripts.git && cd scripts && bash setup/android_build_env.sh && cd .. && rm -rf scripts
+RUN sudo dnf update && sudo dnf upgrade -y
+RUN sudo dnf install git -y
 
 # End
