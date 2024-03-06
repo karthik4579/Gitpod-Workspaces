@@ -3,13 +3,13 @@
 #
 
 # Fetch Ubuntu Latest
-FROM fedora:latest
+FROM debian:latest
 
 # Root
 USER root
 
 # Dependency
-RUN dnf update && sudo dnf upgrade -y
-RUN dnf install git -y
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install git python3 python3-pip -y
 
 # End
