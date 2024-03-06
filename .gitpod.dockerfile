@@ -9,7 +9,7 @@ FROM fedora:latest
 USER root
 
 # Dependency
-RUN sudo dnf update && sudo dnf upgrade -y
-RUN sudo dnf install git -y
+RUN dnf update && sudo dnf upgrade -y
+RUN dnf install git -y
 
 # End
