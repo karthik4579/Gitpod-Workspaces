@@ -3,7 +3,7 @@
 #
 
 # Fetch Ubuntu Latest
-FROM gitpod/workspace-base:latest
+FROM fedora:latest
 
 # Root
 USER root
