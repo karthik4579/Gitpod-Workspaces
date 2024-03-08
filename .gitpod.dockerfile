@@ -1,9 +1,6 @@
 # Fetch Ubuntu Latest
 FROM ubuntu:latest
 
-# Set the default shell to bash
-SHELL ["/bin/bash", "-c"]
-
 # Root
 USER root
 
