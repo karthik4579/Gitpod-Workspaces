@@ -3,13 +3,13 @@
 #
 
 # Fetch Ubuntu Latest
-FROM debian:latest
+FROM ubuntu:latest
 
 # Root
 USER root
 
 # Dependency
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install git python3 python3-pip -y
+RUN apt-get install sudo git python3 python3-pip -y
 
 # End
