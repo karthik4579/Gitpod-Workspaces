@@ -1,5 +1,5 @@
-# Fetch Ubuntu Latest
-FROM ubuntu:latest
+# Fetch gitpod image Latest
+FROM FROM gitpod/workspace-full:latest
 
 # Root
 USER root
