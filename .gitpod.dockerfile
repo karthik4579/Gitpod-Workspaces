@@ -1,5 +1,5 @@
 # Fetch gitpod image Latest
-FROM FROM gitpod/workspace-full:latest
+FROM gitpod/workspace-full:latest
 
 # Root
 USER root
