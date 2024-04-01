@@ -5,13 +5,7 @@ FROM FROM gitpod/workspace-full:latest
 USER root
 
 # Dependency
-RUN apt-get update && apt-get upgrade -y && \
-    apt-get install sudo git python3 python3-pip locales -y && \
-    locale-gen en_US.UTF-8
-
-# Set the locale
-ENV LANG en_US.UTF-8  
-ENV LANGUAGE en_US:en  
-ENV LC_ALL en_US.UTF-8
+RUN apt-get update && apt-get upgrade -y
+RUN curl https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh | bash
 
 # End
